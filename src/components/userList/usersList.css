@@ -17,3 +17,9 @@ ul li.active {
 .pagination li.active a {
     color: #fff;
 }
+.sort-icon {
+    color: #ccc;
+}
+.user-row {
+    cursor: pointer;
+}
