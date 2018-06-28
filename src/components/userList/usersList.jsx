@@ -102,7 +102,7 @@ export default class UsersList extends Component {
                                 })}
                             </tbody>
                         </table>
-                        <div className="pagination">
+                        <div className="pagination col-6 offset-3">
                             <ReactPaginate previousLabel={"previous"}
                                 nextLabel={"next"}
                                 breakLabel={<a href="">...</a>}
