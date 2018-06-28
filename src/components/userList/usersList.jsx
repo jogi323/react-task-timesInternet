@@ -46,7 +46,7 @@ export default class UsersList extends Component {
     handlePageClick = (data) => {
         const page = ++data.selected;
         const start = this.state.itemsPerPage * (page - 1);
-        const end = this.state.itemsPerPage * page <= this.state.usersList.length ? this.state.itemsPerPage * page : this.state.usersList.length -1;
+        const end = this.state.itemsPerPage * page <= this.state.usersList.length ? this.state.itemsPerPage * page : this.state.usersList.length;
         this.setState({
             startIndex: start,
             endIndex: end
