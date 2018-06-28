@@ -14,7 +14,6 @@ export default class UsersList extends Component {
             startIndex: 0,
             endIndex: 0
         };
-        console.log(this.props)
     }
 
     componentDidMount() {
@@ -49,6 +48,7 @@ export default class UsersList extends Component {
 
     render() {
         const displayData = this.state.usersList.slice(this.state.startIndex,this.state.endIndex);
+        console.log(displayData)
         return (
             <Fragment>
                 <div className="col-md-8 offset-md-2 users-list">
@@ -68,7 +68,7 @@ export default class UsersList extends Component {
                                         <tr key={user.email} onClick={()=>this.selectedUser(user)}>
                                             <td>{i + 1 + this.state.startIndex}</td>
                                             <td>{user.name.first + ' ' + user.name.last}</td>
-                                            <td><img src={user.picture.thumbnail} alt="boohoo" className="img-responsive"/></td>
+                                            <td><img src={user.picture.thumbnail} alt="img-thumbnail" className="img-responsive"/></td>
                                     </tr>
                                     )
                                 })}

@@ -1,0 +1,47 @@
+.user-image {
+    margin-bottom: 1%;
+}
+.form-group {
+    margin-bottom: 0.3rem !important;
+}
+.card-head {
+    background-color: #72d6f5;
+    color: #fff;
+}
+.main-content {
+    padding-left: 20%;
+}
+.back{
+    cursor: pointer;
+    color: #72d6f5;
+}
+.card-body {
+    padding: 0.75rem !important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main-content {
+        padding-left: 0px;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .main-content {
+        padding-left: 5%;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .main-content {
+        padding-left: 10%;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .main-content {
+        padding-left: 15%;
+    }
+} 
