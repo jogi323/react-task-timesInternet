@@ -1,7 +1,7 @@
 import React, { Component,Fragment } from 'react';
 import axios from 'axios';
 import ReactPaginate from 'react-paginate';
-import * as FontAwesome from 'react-icons/lib/fa'
+import * as FontAwesome from 'react-icons/lib/fa';
 
 import './usersList.css';
 
@@ -71,6 +71,9 @@ export default class UsersList extends Component {
     render() {
         return (
             <Fragment>
+                {/* <div className="circle">
+
+                </div> */}
                 <div className="col-md-8 offset-md-2 users-list">
                    {this.state.displayData.length > 0 ?  
                     <div>

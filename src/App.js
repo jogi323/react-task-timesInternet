@@ -5,6 +5,7 @@ import Header from './components/common/header/header';
 import Footer from './components/common/footer/footer';
 import UsersList from './components/userList/usersList';
 import UserDetails from './components/userDetsils/userDetails';
+import Test from './components/test/test';
 
 import './App.css';
 
@@ -27,6 +28,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' render={(props) => <UsersList {...props} selectedUser={this.selectedUser}/>}/>
           <Route path='/userdetails/:id' render={(props) => <UserDetails {...props} userId={this.state.user}/>}/>
+          <Route path='/test' component={Test}/>
         </Switch>
         <Footer />
       </div>

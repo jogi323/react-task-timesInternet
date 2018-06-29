@@ -10,8 +10,8 @@ export default class UserDetails extends Component {
     }
   }
   componentDidMount() {
-    const params = this.props.location.pathname.split('/')[1];
-    const url = 'https://randomuser.me/api/?results='+params;
+    const params = this.props.location.pathname.split('/')[2];
+    const url = 'https://randomuser.me/api/?phone='+params;
     axios.get(url).then((res) => {
       this.setState({
         user: res.data.results[0]
