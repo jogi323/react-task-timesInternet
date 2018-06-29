@@ -55,8 +55,9 @@ export default class UsersList extends Component {
         window.scrollTo(0, 0);          
     };
     selectedUser= (data) => {
-        this.props.selectedUser(data);
-        this.props.history.push('/userdetails')
+        console.log(data)
+        this.props.selectedUser(data.phone);
+        this.props.history.push('/userdetails/'+data.phone);
     }
 
     sortUsers = (type) => {

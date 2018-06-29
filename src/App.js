@@ -26,7 +26,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path='/' render={(props) => <UsersList {...props} selectedUser={this.selectedUser}/>}/>
-          <Route path='/userdetails' render={(props) => <UserDetails {...props} user={this.state.user}/>}/>
+          <Route path='/userdetails/:id' render={(props) => <UserDetails {...props} userId={this.state.user}/>}/>
         </Switch>
         <Footer />
       </div>

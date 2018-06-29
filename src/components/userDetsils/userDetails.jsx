@@ -1,15 +1,28 @@
 import React, { Component, Fragment } from 'react';
+import axios from 'axios';
 import './userDetails.css';
 
 export default class UserDetails extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      user: {}
+    }
   }
+  componentDidMount() {
+    const url = 'https://randomuser.me/api/?results='+this.props.userId;
+    axios.get(url).then((res) => {
+      this.setState({
+        user: res.data.results[0]
+      });
+    });
+  }
+
   backToList = () => {
     this.props.history.push('/');
   }
   render() {
-    const user = this.props.user;
+    const user = this.state.user;
     return (
       <Fragment>
         {user.email ? <div className="user-details col-6 offset-3">
